@@ -1,3 +1,7 @@
+let operator = "+";
+let firstNum = 0;
+let secondNum = 0;
+
 function add(a,b) {
     return a+b;
 }
@@ -14,7 +18,6 @@ function divide(a,b) {
     return a/b
 }
 
-console.log(add(2,3));
-console.log(subtract(2,3));
-console.log(multiply(2,3));
-console.log(divide(2,3));
+function operate(operator, a, b) {
+
+}
