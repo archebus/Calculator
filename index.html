@@ -10,78 +10,46 @@
 <body>
     
     <div class="wrapper">
-        <section class="screen" id="screen">
-            0
-        </section>
+        <input class="screen" id="screen" placeholder="0"></input>
 
         <section class="calc-buttons">
             <div class="calc-button-row">
-                <button class="calc-button double" id="clear">
-                    C
-                </button>
-                <button class="calc-button">
-                    &larr;
-                </button>
-                <button class="calc-button" id="divide">
-                    &divide;
-                </button>
+                <button onclick="clearDisplay()" class="calc-button double" id="clear">C</button>
+                <button onclick="appendToDisplay('.')" class="calc-button">.</button>
+                <button onclick="appendToDisplay('/')" class="calc-button" id="divide">&divide;</button>
             </div>
 
             <div class="calc-button-row">
-                <button class="calc-button" id="seven">
-                    7
-                </button>
-                <button class="calc-button" id="eight">
-                    8
-                </button>
-                <button class="calc-button" id="nine">
-                    9
-                </button>
-                <button class="calc-button" id="multiply">
-                    &times;
-                </button>
+                <button onclick="appendToDisplay('7')" class="calc-button" id="seven">7</button>
+                <button onclick="appendToDisplay('8')" class="calc-button" id="eight">8</button>
+                <button onclick="appendToDisplay('9')" class="calc-button" id="nine">9</button>
+                <button onclick="appendToDisplay('*')" class="calc-button" id="multiply">&times;</button>
             </div>
 
             <div class="calc-button-row">
-                <button class="calc-button" id="four">
-                    4
-                </button>
-                <button class="calc-button" id="five">
-                    5
-                </button>
-                <button class="calc-button" id="six">
-                    6
-                </button>
-                <button class="calc-button" id="subtract">
-                    &minus;
-                </button>
+                <button onclick="appendToDisplay('4')" class="calc-button" id="four">4</button>
+                <button onclick="appendToDisplay('5')" class="calc-button" id="five">5</button>
+                <button onclick="appendToDisplay('6')" class="calc-button" id="six">6</button>
+                <button onclick="appendToDisplay('-')" class="calc-button" id="subtract">&minus;</button>
             </div>
 
             <div class="calc-button-row">
-                <button class="calc-button" id="one">
-                    1
-                </button>
-                <button class="calc-button" id="two">
-                    2
-                </button>
-                <button class="calc-button" id="three">
-                    3
-                </button>
-                <button class="calc-button" id="plus">
-                    &plus;
-                </button>
+                <button onclick="appendToDisplay('1')" class="calc-button" id="one">1</button>
+                <button onclick="appendToDisplay('2')" class="calc-button" id="two">2</button>
+                <button onclick="appendToDisplay('3')" class="calc-button" id="three">3</button>
+                <button onclick="appendToDisplay('+')" class="calc-button" id="plus">&plus;</button>
             </div>
 
             <div class="calc-button-row">
-                <button class="calc-button triple" id="zero">
-                    0
-                </button>
-                <button class="calc-button" id="equals">
-                    &equals;
-                </button>
+                <button onclick="appendToDisplay('0')" class="calc-button triple" id="zero">0</button>
+                <button onclick="calculate()" class="calc-button" id="equals">&equals;</button>
             </div>
 
         </section>
+    </div>
+
+    <div class="sub-text">
+        Josh Devon 2024 | Odin Project Foundations
     </div>
 
 </body>

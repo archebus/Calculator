@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.source-code-pro {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -15,10 +24,15 @@ body {
     align-items: center;
     background: linear-gradient(320deg, #0f2227, #0d3050, #11589f);
     display: flex;
-    font-family: 'Times New Roman', Times, serif
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
     font-display: swap;
     height: inherit;
     justify-content: center;
+}
+
+input::placeholder {
+    font-family: "Source Code Pro", monospace;
 }
 
 .wrapper {
@@ -101,4 +115,9 @@ body {
 
 .triple {
     flex-basis: 73%;
+}
+
+.sub-text {
+    margin-top: 40px;
+    color: #fff;
 }
